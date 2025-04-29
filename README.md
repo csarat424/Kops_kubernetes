@@ -8,8 +8,8 @@ IAM ROLE AND ASSIGN IT TO EC2  -  Kops_Cluster
 CONNECT TO  EC2 INSTANCE AND GENERATE ssh-keygen  
 download Kops and Kubectl to usr/local/bin and change permission 
 
-# Download Kubectl and give permissions.
-# edit .bashrc and add all the env variables 
+Download Kubectl and give permissions.
+edit .bashrc and add all the env variables 
 
 Now its time to enter the Environmental Variables
 export NAME=mscgov.xyz
@@ -18,9 +18,9 @@ export AWS_REGION=us-east-1
 export CLUSTER_NAME=mscgov.xyz
 export EDITOR='/usr/bin/nano'
 
-# After copying the above files to .bashrc run “ source .bashrc ”.
+After copying the above files to .bashrc run “ source .bashrc ”.
 
-# Create a Cluster using Kops and generate a cluster file and save it carefully and do neccessary changes
+Create a Cluster using Kops and generate a cluster file and save it carefully and do neccessary changes
 
 kops create cluster --name=mscgov.xyz \
 --state=s3://mscgov.xyz --zones=us-east-1a,us-east-1b \
