@@ -30,9 +30,13 @@ kops create cluster --name=mscgov.xyz \
 
 
 kops create -f cluster.yml
+
 kops update cluster --name mscgov.xyz --yes --admin
+
 kops validate cluster --wait 10m
+
 kops delete -f cluster.yml  --yes
+
 
 Below medium blog has a detailed explanation on how to create your first Kops Cluster:
 https://medium.com/@csarat424/master-production-grade-kubernetes-with-kops-on-aws-the-ultimate-guide-ae3418e7d85d
