@@ -25,12 +25,14 @@ After copying the above files to .bashrc run “ source .bashrc ”.
 # Create Cluster
 Create a Cluster using Kops and generate a cluster file 
 
-``` kops create cluster --name=mscgov.xyz \
+```
+kops create cluster --name=mscgov.xyz \
 --state=s3://mscgov.xyz --zones=us-east-1a,us-east-1b \
 --node-count=2 --control-plane-count=1 --node-size=t3.medium --control-plane-size=t3.medium \
 --control-plane-zones=us-east-1a --control-plane-volume-size 10 --node-volume-size 10 \
 --ssh-public-key ~/.ssh/id_ed25519.pub \
---dns-zone=mscgov.xyz --dry-run --output yaml ```
+--dns-zone=mscgov.xyz --dry-run --output yaml
+```
 
 kops create -f cluster.yml
 
