@@ -9,18 +9,17 @@ This repo has a detailed step-by-step approach on how to initiate a production g
 6. download Kops and Kubectl to usr/local/bin and change permission 
 7. edit .bashrc and add all the below mentioned env variables 
 
-( enter the following Environmental Variables
+Enter the following Environmental Variables
+
+```
 export NAME=mscgov.xyz
-
 export KOPS_STATE_STORE=s3://mscgov.xyz
-
 export AWS_REGION=us-east-1
-
 export CLUSTER_NAME=mscgov.xyz
-
 export EDITOR='/usr/bin/nano')
+```
 
-After copying the above files to .bashrc run “ source .bashrc ”.
+After copying the above Environmental variables to .bashrc run “ source .bashrc ”.
 
 # Create Cluster
 Create a Cluster using Kops and generate a cluster file 
