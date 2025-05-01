@@ -7,7 +7,16 @@ This repo has a detailed step-by-step approach on how to initiate a production g
 4. IAM ROLE AND ASSIGN IT TO EC2  -  Kops_Cluster
 5. CONNECT TO  EC2 INSTANCE AND GENERATE ssh-keygen  
 6. download Kops and Kubectl to usr/local/bin and change permission 
-7. edit .bashrc and add all the below mentioned env variables 
+7. edit .bashrc and add all the below mentioned env variables
+
+Kops link for linux amd 
+```
+https://github.com/kubernetes/kops/releases/download/v1.32.0-beta.1/kops-linux-amd64
+```
+Kubectl link for Ubuntu
+```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
 
 Enter the following Environmental Variables
 
